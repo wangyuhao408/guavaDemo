@@ -1,7 +1,6 @@
 import com.google.common.util.concurrent.FutureCallback;
 import com.google.common.util.concurrent.Futures;
 import com.google.common.util.concurrent.ListenableFuture;
-import com.google.common.util.concurrent.ListenableFutureTask;
 import com.google.common.util.concurrent.ListeningExecutorService;
 import com.google.common.util.concurrent.Monitor;
 import com.google.common.util.concurrent.Monitor.Guard;
@@ -9,9 +8,7 @@ import com.google.common.util.concurrent.MoreExecutors;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.Callable;
-import java.util.concurrent.Executor;
 import java.util.concurrent.Executors;
-import java.util.concurrent.Future;
 
 
 /**
@@ -19,8 +16,8 @@ import java.util.concurrent.Future;
  */
 public class ConcurrentDemo {
 
-  private List<String> list = new ArrayList<String>();
   private static final Integer MAX_SIZE = 10;
+  private List<String> list = new ArrayList<String>();
 
   /**
    *
